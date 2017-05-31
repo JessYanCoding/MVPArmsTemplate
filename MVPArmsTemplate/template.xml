@@ -1,0 +1,211 @@
+<?xml version="1.0"?>
+<template
+    format="5"
+    revision="1"
+    name="MVPArms 全家桶"
+    minApi="9"
+    minBuildApi="15"
+    description="一键创建 MVPArms 单个页面所需要的全部组件, JessYan 将这个高度可配置的模版献给强大的 MVPArms,使用详情请见 README">
+
+    <category value="Activity" />
+    <formfactor value="Mobile" />
+
+    <parameter
+        id="pageName"
+        name="Page Name"
+        type="string"
+        constraints="unique|nonempty"
+        default="Main"
+        help="请填写页面名,如填写 Main,会自动生成 MainActivity, MainPresenter 等文件" />
+
+    <parameter
+            id="packageName"
+            name="Root Package Name"
+            type="string"
+            constraints="package"
+            default="com.mycompany.myapp"
+            help="请填写你的项目包名,请认真核实此包名是否是正确的项目包名,不能包含子包,正确的格式如:me.jessyan.arms"
+            />
+        
+
+    <parameter
+        id="needActivity"
+        name="Generate Activity"
+        type="boolean"
+        default="true"
+        help="是否需要生成 Activity ? 不勾选则不生成" />
+
+
+
+
+<parameter
+        id="activityLayoutName"
+        name="Activity Layout Name"
+        type="string"
+        constraints="layout|nonempty"
+        suggest="${activityToLayout(pageName)}"
+        default="activity_main"
+        visibility="needActivity"
+        help="Activity 创建之前需要填写 Activity 的布局名,若布局已创建就直接填写此布局名,若还没创建此布局,请勾选下面的单选框" />
+
+
+    <parameter
+        id="generateActivityLayout"
+        name="Generate Activity Layout"
+        type="boolean"
+        default="true"
+        visibility="needActivity"
+        help="是否需要给 Activity 生成布局? 若勾选,则使用上面的布局名给此 Activity 创建默认的布局" />
+
+
+ <parameter
+        id="ativityPackageName"
+        name="Ativity Package Name"
+        type="string"
+        constraints="package"
+        suggest="${packageName}.mvp.ui.activity"
+        visibility="needActivity"
+        help="Activity 将被输出到此包下,请认真核实此包名是否是你需要输出的目标包名"
+        />
+
+
+
+
+    <parameter
+        id="needFragment"
+        name="Generate Fragment"
+        type="boolean"
+        default="false"
+        help="是否需要生成 Fragment ? 不勾选则不生成" /> 
+
+
+
+
+    <parameter
+        id="fragmentLayoutName"
+        name="Fragment Layout Name"
+        type="string"
+        constraints="layout|nonempty"
+        suggest="fragment_${classToResource(pageName)}"
+        default="fragment_main"
+        visibility="needFragment"
+        help="Fragment 创建之前需要填写 Fragment 的布局名,若布局已创建就直接填写此布局名,若还没创建此布局,请勾选下面的单选框" /> 
+
+
+
+ <parameter
+        id="generateFragmentLayout"
+        name="Generate Fragment Layout"
+        type="boolean"
+        default="true"
+        visibility="needFragment"
+        help="是否需要给 Fragment 生成布局? 若勾选,则使用上面的布局名给此 Fragment 创建默认的布局" />
+
+
+ <parameter
+        id="fragmentPackageName"
+        name="Fragment Package Name"
+        type="string"
+        constraints="package"
+        suggest="${packageName}.mvp.ui.fragment"
+        visibility="needFragment"
+        help="Fragment 将被输出到此包下,请认真核实此包名是否是你需要输出的目标包名"
+        />  
+
+
+
+<parameter
+        id="needContract"
+        name="Generate Contract"
+        type="boolean"
+        default="true"
+        help="是否需要生成 Contract ? 不勾选则不生成" />  
+
+ <parameter
+        id="contractPackageName"
+        name="Contract Package Name"
+        type="string"
+        constraints="package"
+        suggest="${packageName}.mvp.contract" 
+        visibility="needContract"
+        help="Contract 将被输出到此包下,请认真核实此包名是否是你需要输出的目标包名"
+        />  
+
+<parameter
+        id="needPresenter"
+        name="Generate Presenter"
+        type="boolean"
+        default="true"
+        help="是否需要生成 Presenter ? 不勾选则不生成" />  
+
+ <parameter
+        id="presenterPackageName"
+        name="Presenter Package Name"
+        type="string"
+        constraints="package"
+        suggest="${packageName}.mvp.presenter"
+        visibility="needPresenter"
+        help="Presenter 将被输出到此包下,请认真核实此包名是否是你需要输出的目标包名"
+        />  
+
+<parameter
+        id="needModel"
+        name="Generate Model"
+        type="boolean"
+        default="true"
+        help="是否需要生成 Model ? 不勾选则不生成" /> 
+
+
+<parameter
+        id="modelPackageName"
+        name="Model Package Name"
+        type="string"
+        constraints="package"
+        suggest="${packageName}.mvp.model"
+        visibility="needModel"
+        help="Model 将被输出到此包下,请认真核实此包名是否是你需要输出的目标包名"
+        />  
+
+
+
+<parameter
+        id="needDagger"
+        name="Generate Dagger (Moudle And Component)"
+        type="boolean"
+        default="true"
+        help="是否需要生成 Dagger 组件? 不勾选则不生成" />  
+
+<parameter
+        id="componentPackageName"
+        name="Component Package Name"
+        type="string"
+        constraints="package"
+        suggest="${packageName}.di.component"
+        visibility="needDagger"
+        help="Component 将被输出到此包下,请认真核实此包名是否是你需要输出的目标包名"
+        />  
+
+
+   <parameter
+        id="moudlePackageName"
+        name="Moudle Package Name"
+        type="string"
+        constraints="package"
+        suggest="${packageName}.di.module"
+        visibility="needDagger"
+        help="Moudle 将被输出到此包下,请认真核实此包名是否是你需要输出的目标包名"
+        />  
+
+
+
+
+    <!-- 128x128 thumbnails relative to template.xml -->
+    <thumbs>
+        <!-- default thumbnail is required -->
+        <thumb>template_blank_activity.png</thumb>
+    </thumbs>
+
+    <globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+
+</template>
