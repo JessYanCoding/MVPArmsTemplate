@@ -1,11 +1,11 @@
 # MVPArmsTemplate
-A template for Android Studio to create MVPArms Page 
+A template for Android Studio to create [MVPArms](https://github.com/JessYanCoding/MVPArms) Page 
 
 
 ![gif](art/MVPArms.gif)
 
 
-**MVPArmsTemplate** 是 `JessYan` 为强大的 **MVPArms** 打造的一款高度可配置且炒鸡炫酷的插件式模版,拥有一键自动生成 **File** **Xml**,以及可自定义配置文件名,布局名,和用于文件生成的目标包路径,并且某一个组建都有权利选择生成或者不生成
+**MVPArmsTemplate** 是 `JessYan` 为强大的 [**MVPArms**](https://github.com/JessYanCoding/MVPArms) 打造的一款高度可配置且炒鸡炫酷的插件式模版,拥有一键自动生成 **File** **Xml**,以及可自定义配置文件名,布局名,和用于文件生成的目标包路径,并且某一个组建都有权利选择生成或者不生成
 
 # 如何安装？
 
