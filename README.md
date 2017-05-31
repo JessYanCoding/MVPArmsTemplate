@@ -5,7 +5,7 @@ A template for Android Studio to create MVPArms Page
 ![gif](art/MVPArms.gif)
 
 
-**MVPArmsTemplate** 是 `JessYan` 为强大的 **MVPArms** 打造的一款高度可配置且炒鸡炫酷的插件式模版,拥有自动生成 **File** **Xml**,以及可自定义配置文件名,布局名,和用于文件生成的目标包路径,并且某一个组建都有权利选择生成或者不生成
+**MVPArmsTemplate** 是 `JessYan` 为强大的 **MVPArms** 打造的一款高度可配置且炒鸡炫酷的插件式模版,拥有一键自动生成 **File** **Xml**,以及可自定义配置文件名,布局名,和用于文件生成的目标包路径,并且某一个组建都有权利选择生成或者不生成
 
 # 如何安装？
 
@@ -25,7 +25,7 @@ A template for Android Studio to create MVPArms Page
 
 # 注意事项
 
-<img src="art/attention.png" width="70%" height="70%">
+<img src="art/attention.png" width="50%" height="50%">
 
 1. 原则上在任何包下都可以点击上面的按钮生成文件,你在哪个包下点击生成文件, **Root Package Name** 的值就是哪个包,下面的 **Activity Package Name** , **Presenter Package Name** 的默认值(根据 **MVPArms Demo** 的包结构)都是根据这个 **Root Package Name** 联动的,以我 **MVPArms Demo** 的包结构, **Presenter** 是放在 **.mvp.presenter** 下的,现在 **Presenter Package Name** 的值显示的确是 **.app.mvp.presenter**,所以你最好在你的根包名下点击生成文件(如me.jessyan.wideeyes),当然这些输出包名都是可以修改,你不一定要使用我的默认的输出包名,因为每个人的包结构都不一样,所以包名可配置是刚需       
 
