@@ -80,7 +80,7 @@ public class ${pageName}Fragment extends BaseFragment<${pageName}Presenter> impl
     @Override
     public void showMessage(@NonNull String message) {
         checkNotNull(message);
-        UiUtils.SnackbarText(message);
+        UiUtils.snackbarText(message);
     }
 
     @Override
