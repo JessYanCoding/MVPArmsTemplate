@@ -56,7 +56,7 @@ public class ${pageName}Activity extends BaseActivity<${pageName}Presenter> impl
     @Override
     public void showMessage(@NonNull String message) {
         checkNotNull(message);
-        UiUtils.SnackbarText(message);
+        UiUtils.snackbarText(message);
     }
 
     @Override
