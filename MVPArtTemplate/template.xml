@@ -66,8 +66,8 @@
         id="ativityPackageName"
         name="Ativity Package Name"
         type="string"
-        constraints="package"
-        suggest="${packageName}.mvp.ui.activity"
+        constraints="nonempty"
+        suggest=".mvp.ui.activity"
         visibility="needActivity"
         help="Activity 将被输出到此包下,请认真核实此包名是否是你需要输出的目标包名"
         />
@@ -110,8 +110,8 @@
         id="fragmentPackageName"
         name="Fragment Package Name"
         type="string"
-        constraints="package"
-        suggest="${packageName}.mvp.ui.fragment"
+        constraints="nonempty"
+        suggest=".mvp.ui.fragment"
         visibility="needFragment"
         help="Fragment 将被输出到此包下,请认真核实此包名是否是你需要输出的目标包名"
         />  
@@ -138,8 +138,8 @@
         id="presenterPackageName"
         name="Presenter Package Name"
         type="string"
-        constraints="package"
-        suggest="${packageName}.mvp.presenter"
+        constraints="nonempty"
+        suggest=".mvp.presenter"
         visibility="needPresenter"
         help="Presenter 将被输出到此包下,请认真核实此包名是否是你需要输出的目标包名"
         /> 
@@ -165,8 +165,8 @@
         id="modelPackageName"
         name="Model Package Name"
         type="string"
-        constraints="package"
-        suggest="${packageName}.mvp.model"
+        constraints="nonempty"
+        suggest=".mvp.model"
         visibility="needModel"
         help="Model 将被输出到此包下,请认真核实此包名是否是你需要输出的目标包名"
         />  

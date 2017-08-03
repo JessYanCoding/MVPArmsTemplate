@@ -1,4 +1,4 @@
-package ${modelPackageName};
+package ${packageName}${modelPackageName};
 
 import me.jessyan.art.mvp.IModel;
 import me.jessyan.art.mvp.IRepositoryManager;

@@ -1,4 +1,4 @@
-package ${ativityPackageName};
+package ${packageName}${ativityPackageName};
 
 import android.os.Bundle;
 
@@ -9,7 +9,7 @@ import me.jessyan.art.mvp.Message;
 import me.jessyan.art.utils.UiUtils;
 
 <#if presenterName?has_content>
-import ${presenterPackageName}.${presenterName};
+import ${packageName}${presenterPackageName}.${presenterName};
 </#if>
 
 import ${packageName}.R;

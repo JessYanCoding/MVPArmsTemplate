@@ -1,11 +1,11 @@
-package ${presenterPackageName};
+package ${packageName}${presenterPackageName};
 
 import me.jessyan.art.di.component.AppComponent;
 import me.jessyan.art.mvp.BasePresenter;
 import me.jessyan.rxerrorhandler.core.RxErrorHandler;
 
 <#if modelName?has_content>
-import ${modelPackageName}.${modelName};
+import ${packageName}${modelPackageName}.${modelName};
 </#if>
 
 
