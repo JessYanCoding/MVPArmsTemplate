@@ -69,7 +69,7 @@
         constraints="nonempty"
         suggest=".mvp.ui.activity"
         visibility="needActivity"
-        help="Activity 将被输出到此包下,请认真核实此包名是否是你需要输出的目标包名"
+        help="Activity 将被输出到此包下,请认真核实此包名是否是你需要输出的目标包名 (基于 Root Package Name )"
         />
 
 
@@ -113,7 +113,7 @@
         constraints="nonempty"
         suggest=".mvp.ui.fragment"
         visibility="needFragment"
-        help="Fragment 将被输出到此包下,请认真核实此包名是否是你需要输出的目标包名"
+        help="Fragment 将被输出到此包下,请认真核实此包名是否是你需要输出的目标包名 (基于 Root Package Name )"
         />  
 
 
@@ -141,7 +141,7 @@
         constraints="nonempty"
         suggest=".mvp.presenter"
         visibility="needPresenter"
-        help="Presenter 将被输出到此包下,请认真核实此包名是否是你需要输出的目标包名"
+        help="Presenter 将被输出到此包下,请认真核实此包名是否是你需要输出的目标包名 (基于 Root Package Name )"
         /> 
 
 <parameter
@@ -168,7 +168,7 @@
         constraints="nonempty"
         suggest=".mvp.model"
         visibility="needModel"
-        help="Model 将被输出到此包下,请认真核实此包名是否是你需要输出的目标包名"
+        help="Model 将被输出到此包下,请认真核实此包名是否是你需要输出的目标包名 (基于 Root Package Name )"
         />  
 
 
