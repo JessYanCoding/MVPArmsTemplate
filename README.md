@@ -17,6 +17,8 @@ A template for Android Studio to create [MVPArms](https://github.com/JessYanCodi
 
 * Mac : /Applications/Android Studio.app/Contents/plugins/android/lib/templates/activities
 
+最后记得 **AndroidStudio** !
+
 # 如何使用?
 
 一图胜千言,两个红色的标记都可以点,至于快捷键自己百度, **Mac** 是 **Command + n**
