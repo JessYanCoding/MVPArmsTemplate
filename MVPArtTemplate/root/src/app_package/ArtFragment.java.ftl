@@ -38,7 +38,7 @@ public class ${pageName}Fragment extends BaseFragment <#if presenterName?has_con
 
     @Override
     public <#if presenterName?has_content>${presenterName}<#else>IPresenter</#if> obtainPresenter() {
-        return <#if presenterName?has_content> new ${presenterName}(((App) getActivity().getApplication()).getAppComponent())<#else> null</#if>;
+        return <#if presenterName?has_content> new ${presenterName}(UiUtils.obtainAppComponentFromContext(getActivity()))<#else> null</#if>;
     }
 
      /**
