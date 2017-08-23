@@ -29,7 +29,7 @@ public class ${pageName}Activity extends BaseActivity <#if presenterName?has_con
 
     @Override
     public <#if presenterName?has_content>${presenterName}<#else>IPresenter</#if> obtainPresenter() {
-        return <#if presenterName?has_content> new ${presenterName}(((App) getApplication()).getAppComponent())<#else> null</#if>;
+        return <#if presenterName?has_content> new ${presenterName}(UiUtils.obtainAppComponentFromContext(this))<#else> null</#if>;
     }
 
 
