@@ -6,7 +6,7 @@ import android.support.annotation.NonNull;
 
 import com.jess.arms.base.BaseActivity;
 import com.jess.arms.di.component.AppComponent;
-import com.jess.arms.utils.UiUtils;
+import com.jess.arms.utils.ArmsUtils;
 
 import ${componentPackageName}.Dagger${pageName}Component;
 import ${moudlePackageName}.${pageName}Module;
@@ -56,13 +56,13 @@ public class ${pageName}Activity extends BaseActivity<${pageName}Presenter> impl
     @Override
     public void showMessage(@NonNull String message) {
         checkNotNull(message);
-        UiUtils.snackbarText(message);
+        ArmsUtils.snackbarText(message);
     }
 
     @Override
     public void launchActivity(@NonNull Intent intent) {
         checkNotNull(intent);
-        UiUtils.startActivity(intent);
+        ArmsUtils.startActivity(intent);
     }
 
     @Override
