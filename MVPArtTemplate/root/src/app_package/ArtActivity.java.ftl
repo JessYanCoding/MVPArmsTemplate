@@ -6,7 +6,7 @@ import me.jessyan.art.base.App;
 import me.jessyan.art.base.BaseActivity;
 import me.jessyan.art.mvp.IView;
 import me.jessyan.art.mvp.Message;
-import me.jessyan.art.utils.UiUtils;
+import me.jessyan.art.utils.ArtUtils;
 
 <#if presenterName?has_content>
 import ${packageName}${presenterPackageName}.${presenterName};
@@ -29,7 +29,7 @@ public class ${pageName}Activity extends BaseActivity <#if presenterName?has_con
 
     @Override
     public <#if presenterName?has_content>${presenterName}<#else>IPresenter</#if> obtainPresenter() {
-        return <#if presenterName?has_content> new ${presenterName}(UiUtils.obtainAppComponentFromContext(this))<#else> null</#if>;
+        return <#if presenterName?has_content> new ${presenterName}(ArtUtils.obtainAppComponentFromContext(this))<#else> null</#if>;
     }
 
 
@@ -45,7 +45,7 @@ public class ${pageName}Activity extends BaseActivity <#if presenterName?has_con
 
     @Override
     public void showMessage(String message) {
-        UiUtils.snackbarText(message);
+        ArtUtils.snackbarText(message);
     }
 
     @Override
