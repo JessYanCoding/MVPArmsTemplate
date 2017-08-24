@@ -9,7 +9,7 @@ import me.jessyan.art.base.App;
 import me.jessyan.art.base.BaseFragment;
 import me.jessyan.art.mvp.IView;
 import me.jessyan.art.mvp.Message;
-import me.jessyan.art.utils.UiUtils;
+import me.jessyan.art.utils.ArtUtils;
 
 <#if presenterName?has_content>
 import ${packageName}${presenterPackageName}.${presenterName};
@@ -38,7 +38,7 @@ public class ${pageName}Fragment extends BaseFragment <#if presenterName?has_con
 
     @Override
     public <#if presenterName?has_content>${presenterName}<#else>IPresenter</#if> obtainPresenter() {
-        return <#if presenterName?has_content> new ${presenterName}(UiUtils.obtainAppComponentFromContext(getActivity()))<#else> null</#if>;
+        return <#if presenterName?has_content> new ${presenterName}(ArtUtils.obtainAppComponentFromContext(getActivity()))<#else> null</#if>;
     }
 
      /**
@@ -71,7 +71,7 @@ public class ${pageName}Fragment extends BaseFragment <#if presenterName?has_con
 
     @Override
     public void showMessage(String message) {
-        UiUtils.snackbarText(message);
+        ArtUtils.snackbarText(message);
     }
 
 
