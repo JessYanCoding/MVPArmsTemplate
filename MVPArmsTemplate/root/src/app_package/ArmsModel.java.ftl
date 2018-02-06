@@ -13,14 +13,14 @@ import ${contractPackageName}.${pageName}Contract;
 
 @ActivityScope
 public class ${pageName}Model extends BaseModel implements ${pageName}Contract.Model{
-    private Gson mGson;
-    private Application mApplication;
+    @Inject
+    Gson mGson;
+    @Inject
+    Application mApplication;
 
     @Inject
-    public ${pageName}Model(IRepositoryManager repositoryManager, Gson gson, Application application) {
+    public ${pageName}Model(IRepositoryManager repositoryManager) {
         super(repositoryManager);
-        this.mGson = gson;
-        this.mApplication = application;
     }
 
     @Override

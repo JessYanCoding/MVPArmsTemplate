@@ -15,20 +15,18 @@ import ${contractPackageName}.${pageName}Contract;
 
 @ActivityScope
 public class ${pageName}Presenter extends BasePresenter<${pageName}Contract.Model, ${pageName}Contract.View> {
-    private RxErrorHandler mErrorHandler;
-    private Application mApplication;
-    private ImageLoader mImageLoader;
-    private AppManager mAppManager;
+    @Inject
+    RxErrorHandler mErrorHandler;
+    @Inject
+    Application mApplication;
+    @Inject
+    ImageLoader mImageLoader;
+    @Inject
+    AppManager mAppManager;
 
     @Inject
-    public ${pageName}Presenter (${pageName}Contract.Model model, ${pageName}Contract.View rootView
-            , RxErrorHandler handler, Application application
-            , ImageLoader imageLoader, AppManager appManager) {
+    public ${pageName}Presenter (${pageName}Contract.Model model, ${pageName}Contract.View rootView) {
         super(model, rootView);
-        this.mErrorHandler = handler;
-        this.mApplication = application;
-        this.mImageLoader = imageLoader;
-        this.mAppManager = appManager;
     }
 
     @Override
