@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Message;
 import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -31,7 +32,7 @@ public class ${pageName}Fragment extends BaseFragment<${pageName}Presenter> impl
     }
 
     @Override
-    public void setupFragmentComponent(AppComponent appComponent) {
+    public void setupFragmentComponent(@NonNull AppComponent appComponent) {
         Dagger${pageName}Component //如找不到该类,请编译一下项目
                 .builder()
                 .appComponent(appComponent)
@@ -41,12 +42,12 @@ public class ${pageName}Fragment extends BaseFragment<${pageName}Presenter> impl
     }
 
     @Override
-    public View initView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View initView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         return inflater.inflate(R.layout.${fragmentLayoutName}, container, false);
     }
 
     @Override
-    public void initData(Bundle savedInstanceState) {
+    public void initData(@Nullable Bundle savedInstanceState) {
 
     }
 
@@ -62,7 +63,7 @@ public class ${pageName}Fragment extends BaseFragment<${pageName}Presenter> impl
      * Example usage:
      * <pre> {@code
 
-      public void setData(Object data) {
+      public void setData(@Nullable Object data) {
           if (data != null && data instanceof Message) {
               switch (((Message) data).what) {
                   case 0:
@@ -88,7 +89,7 @@ public class ${pageName}Fragment extends BaseFragment<${pageName}Presenter> impl
      * @param data 当不需要参数时 {@code data} 可以为 {@code null}
      */
     @Override
-    public void setData(Object data) {
+    public void setData(@Nullable Object data) {
 
     }
 
