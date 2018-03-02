@@ -3,6 +3,7 @@ package ${ativityPackageName};
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 
 import com.jess.arms.base.BaseActivity;
 import com.jess.arms.di.component.AppComponent;
@@ -23,7 +24,7 @@ public class ${pageName}Activity extends BaseActivity<${pageName}Presenter> impl
 
 
     @Override
-    public void setupActivityComponent(AppComponent appComponent) {
+    public void setupActivityComponent(@NonNull AppComponent appComponent) {
         Dagger${pageName}Component //如找不到该类,请编译一下项目
                 .builder()
                 .appComponent(appComponent)
@@ -33,12 +34,12 @@ public class ${pageName}Activity extends BaseActivity<${pageName}Presenter> impl
     }
 
     @Override
-    public int initView(Bundle savedInstanceState) {
+    public int initView(@Nullable Bundle savedInstanceState) {
         return R.layout.${activityLayoutName}; //如果你不需要框架帮你设置 setContentView(id) 需要自行设置,请返回 0
     }
 
     @Override
-    public void initData(Bundle savedInstanceState) {
+    public void initData(@Nullable Bundle savedInstanceState) {
 
     }
 
@@ -69,6 +70,4 @@ public class ${pageName}Activity extends BaseActivity<${pageName}Presenter> impl
     public void killMyself() {
         finish();
     }
-
-
 }
