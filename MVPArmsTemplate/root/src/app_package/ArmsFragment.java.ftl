@@ -61,30 +61,29 @@ public class ${pageName}Fragment extends BaseFragment<${pageName}Presenter> impl
      * 然后才创建的 Presenter, 如果要做一些初始化操作,可以不必让外部调用 {@link #setData(Object)}, 在 {@link #initData(Bundle)} 中初始化就可以了
      * <p>
      * Example usage:
-     * <pre> {@code
-
-      public void setData(@Nullable Object data) {
-          if (data != null && data instanceof Message) {
-              switch (((Message) data).what) {
-                  case 0:
-                      loadData(((Message) data).arg1);
-                      break;
-                  case 1:
-                      refreshUI();
-                      break;
-                  default:
-                      //do something
-                      break;
-              }
-          }
-      }
-
-      // call setData(Object):
-      Message data = new Message();
-      data.what = 0;
-      data.arg1 = 1;
-      fragment.setData(data);
-      } </pre>
+     * <pre>
+     * public void setData(@Nullable Object data) {
+     *     if (data != null && data instanceof Message) {
+     *         switch (((Message) data).what) {
+     *             case 0:
+     *                 loadData(((Message) data).arg1);
+     *                 break;
+     *             case 1:
+     *                 refreshUI();
+     *                 break;
+     *             default:
+     *                 //do something
+     *                 break;
+     *         }
+     *     }
+     * }
+     *
+     * // call setData(Object):
+     * Message data = new Message();
+     * data.what = 0;
+     * data.arg1 = 1;
+     * fragment.setData(data);
+     * </pre>
      *
      * @param data 当不需要参数时 {@code data} 可以为 {@code null}
      */
