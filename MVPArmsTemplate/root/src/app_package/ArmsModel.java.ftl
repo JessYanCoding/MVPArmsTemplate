@@ -29,5 +29,4 @@ public class ${pageName}Model extends BaseModel implements ${pageName}Contract.M
         this.mGson = null;
         this.mApplication = null;
     }
-
 }

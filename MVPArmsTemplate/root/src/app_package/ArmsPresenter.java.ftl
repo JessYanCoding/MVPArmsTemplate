@@ -37,5 +37,4 @@ public class ${pageName}Presenter extends BasePresenter<${pageName}Contract.Mode
         this.mImageLoader = null;
         this.mApplication = null;
     }
-
 }

@@ -22,7 +22,6 @@ import static com.jess.arms.utils.Preconditions.checkNotNull;
 
 public class ${pageName}Activity extends BaseActivity<${pageName}Presenter> implements ${pageName}Contract.View {
 
-
     @Override
     public void setupActivityComponent(@NonNull AppComponent appComponent) {
         Dagger${pageName}Component //如找不到该类,请编译一下项目
@@ -42,7 +41,6 @@ public class ${pageName}Activity extends BaseActivity<${pageName}Presenter> impl
     public void initData(@Nullable Bundle savedInstanceState) {
 
     }
-
 
     @Override
     public void showLoading() {
