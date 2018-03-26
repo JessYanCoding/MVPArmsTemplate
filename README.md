@@ -9,7 +9,7 @@ A template for Android Studio to create [MVPArms](https://github.com/JessYanCodi
 
 # 如何安装？
 
-请将 **MVPArmsTemplate** 这个文件夹复制到 **AndroidStudio Activity** 模版的存放路径(其他模版同理),请注意是复制整个文件夹,不是里面的内容!
+请将 **MVPArmsTemplate** (如果使用的是 **MVPArt** 请复制 **MVPArtTemplate** 文件夹) 这个文件夹复制到 **AndroidStudio Activity** 模版的存放路径(其他模版同理), 请注意是复制整个文件夹, 不是里面的内容!
 
 **AndroidStudio Activity** 模版存放路径:
 
