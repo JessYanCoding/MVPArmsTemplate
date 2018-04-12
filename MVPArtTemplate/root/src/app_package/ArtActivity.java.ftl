@@ -1,6 +1,8 @@
 package ${packageName}${ativityPackageName};
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 
 import me.jessyan.art.base.App;
 import me.jessyan.art.base.BaseActivity;
@@ -18,20 +20,20 @@ import ${packageName}.R;
 public class ${pageName}Activity extends BaseActivity <#if presenterName?has_content><${presenterName}></#if> implements IView {
 
     @Override
-    public int initView(Bundle savedInstanceState) {
+    public int initView(@Nullable Bundle savedInstanceState) {
         return R.layout.${activityLayoutName}; //如果你不需要框架帮你设置 setContentView(id) 需要自行设置,请返回 0
     }
 
     @Override
-    public void initData(Bundle savedInstanceState) {
+    public void initData(@Nullable Bundle savedInstanceState) {
 
     }
 
     @Override
+    @Nullable
     public <#if presenterName?has_content>${presenterName}<#else>IPresenter</#if> obtainPresenter() {
         return <#if presenterName?has_content> new ${presenterName}(ArtUtils.obtainAppComponentFromContext(this))<#else> null</#if>;
     }
-
 
     @Override
     public void showLoading() {
@@ -44,12 +46,12 @@ public class ${pageName}Activity extends BaseActivity <#if presenterName?has_con
     }
 
     @Override
-    public void showMessage(String message) {
+    public void showMessage(@NonNull String message) {
         ArtUtils.snackbarText(message);
     }
 
     @Override
-    public void handleMessage(Message message) {
+    public void handleMessage(@NonNull Message message) {
         switch (message.what) {
             case 0:
                 break;
@@ -57,6 +59,4 @@ public class ${pageName}Activity extends BaseActivity <#if presenterName?has_con
                 break;
         }
     }
-
-
 }

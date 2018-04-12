@@ -9,9 +9,7 @@ import me.jessyan.art.mvp.IRepositoryManager;
  * 无需每个页面都创建一个独立的 Repository
  * 通过 {@link me.jessyan.art.mvp.IRepositoryManager#createRepository(java.lang.Class)} 获得的 Repository 实例,为单例对象
  */
-
 public class ${modelName} implements IModel {
-
     private IRepositoryManager mManager;
 
     public ${modelName}(IRepositoryManager manager) {
@@ -22,5 +20,4 @@ public class ${modelName} implements IModel {
     public void onDestroy() {
         
     }
-
 }

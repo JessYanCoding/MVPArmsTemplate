@@ -22,5 +22,4 @@ public class ${presenterName} extends BasePresenter <#if modelName?has_content><
         super.onDestroy();
         this.mErrorHandler = null;
     }
-
 }
