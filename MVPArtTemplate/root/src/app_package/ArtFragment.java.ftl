@@ -1,12 +1,16 @@
 package ${packageName}${fragmentPackageName};
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
+import android.app.Activity;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import me.jessyan.art.base.App;
 import me.jessyan.art.base.BaseFragment;
+import me.jessyan.art.base.delegate.IFragment;
 import me.jessyan.art.mvp.IView;
 import me.jessyan.art.mvp.Message;
 import me.jessyan.art.utils.ArtUtils;

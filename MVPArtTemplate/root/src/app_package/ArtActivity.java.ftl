@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 
-import me.jessyan.art.base.App;
 import me.jessyan.art.base.BaseActivity;
 import me.jessyan.art.mvp.IView;
 import me.jessyan.art.mvp.Message;
