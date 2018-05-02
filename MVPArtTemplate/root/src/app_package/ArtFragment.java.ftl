@@ -15,6 +15,8 @@ import me.jessyan.art.mvp.IView;
 import me.jessyan.art.mvp.Message;
 import me.jessyan.art.utils.ArtUtils;
 
+import static me.jessyan.art.utils.Preconditions.checkNotNull;
+
 <#if presenterName?has_content>
 import ${packageName}${presenterPackageName}.${presenterName};
 </#if>
@@ -105,11 +107,13 @@ public class ${pageName}Fragment extends BaseFragment <#if presenterName?has_con
 
     @Override
     public void showMessage(@NonNull String message) {
+        checkNotNull(message);
         ArtUtils.snackbarText(message);
     }
 
     @Override
     public void handleMessage(@NonNull Message message) {
+        checkNotNull(message);
         switch (message.what) {
             case 0:
                 break;
