@@ -5,7 +5,7 @@ A template for Android Studio to create [MVPArms](https://github.com/JessYanCodi
 ![gif](art/MVPArms.gif)
 
 
-**MVPArmsTemplate** 和 **MVPArtTemplate** 是 [**JessYan**](https://github.com/JessYanCoding) 为强大的 [**MVPArms**](https://github.com/JessYanCoding/MVPArms) 以及 [**MVPArt**](https://github.com/JessYanCoding/MVPArt) 打造的一系列高度可配置且炒鸡炫酷的插件式模版,拥有为每个页面一键自动生成 **File** , **Xml** ,以及可自定义配置文件名,布局名,和用于文件生成的目标包路径,并且每一个文件都有权利选择生成或者不生成
+**MVPArmsTemplate** 和 **MVPArtTemplate** 是 [**JessYan**](https://github.com/JessYanCoding) 为强大的 [**MVPArms**](https://github.com/JessYanCoding/MVPArms) 以及 [**MVPArt**](https://github.com/JessYanCoding/MVPArt) 打造的一系列高度可配置且炒鸡炫酷的插件式模版, 可以为每个业务页面一键自动生成 **File**、**Xml**, 还可以自定义配置文件名、布局名和用于文件生成的目标包路径, 并且每一个文件都可以控制生成与否
 
 # 如何安装？
 
@@ -31,11 +31,9 @@ A template for Android Studio to create [MVPArms](https://github.com/JessYanCodi
 
 <img src="art/attention.png" width="60%" height="60%">
 
-* 原则上在任何包下都可以点击上面的按钮生成文件,你在哪个包下点击生成文件, **Root Package Name** 的值就是哪个包,下面的 **Activity Package Name** , **Presenter Package Name** 的默认值(根据 **MVPArms Demo** 的包结构)都是根据这个 **Root Package Name** 联动的,以我 **MVPArms Demo** 的包结构, **Presenter** 应该是放在 **.mvp.presenter** 下的,但是现在 **Presenter Package Name** 的值却显示的是 **.app.mvp.presenter**,明显和预期的输出包名不一致,所以你最好在你的根包名下点击生成文件(如me.jessyan.wideeyes),当然这些输出包名都是可以修改,你不一定要使用我的默认的输出包名,因为每个人的包结构都不一样,所以包名可配置是刚需       
+* 原则上在任何包下都可以点击上面的按钮生成文件, 你在哪个包下点击生成文件, **Root Package Name** 的值就是哪个包, 下面的 **Activity Package Name**, **Presenter Package Name** 的默认值 (根据 **MVPArms Demo** 的包结构) 都是根据这个 **Root Package Name** 联动的, 如上图, 以我 **MVPArms Demo** 的包结构, **Presenter** 应该是放在 **.mvp.presenter** 下的, 但是现在 **Presenter Package Name** 的值却显示的是 **.app.mvp.presenter**, 明显和预期的输出包名不一致, 所以你最好在你的根包名下点击生成文件 (如 **me.jessyan.wideeyes**), 当然这些输出包名都是可以修改, 你不一定要使用我的默认的输出包名, 因为每个人的包结构都不一样, 所以包名可配置是刚需       
 
-
-
-* 生成 **Activity** 以及 **Fragment** 前,必须填写 **Layout Name**,你可以自行生成布局后,再将布局名填写到 **Activity/Fragment Layout Name**,也可以使用本模版自动生成布局,自动生成布局请将 **Generate Activity/Fragment Layout** 勾选上(默认勾选),如果你已经自行生成了布局,不想使用自动生成布局,那请不要勾选(一定要注意,因为这个是默认勾选的)
+* 生成 **Activity** 以及 **Fragment** 前, 必须填写 **Layout Name**, 你可以自行生成布局后, 再将布局名填写到 **Activity/Fragment Layout Name**, 也可以使用本模版自动生成布局, 自动生成布局请将 **Generate Activity/Fragment Layout** 勾选上 (默认勾选), 如果你已经自行生成了布局, 不想使用自动生成布局, 那请不要勾选 (一定要注意, 因为这个是默认勾选的)
 
 
 
