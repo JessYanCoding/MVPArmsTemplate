@@ -1,9 +1,7 @@
 # MVPArmsTemplate
 A template for Android Studio to create [MVPArms](https://github.com/JessYanCoding/MVPArms) and [MVPArt](https://github.com/JessYanCoding/MVPArt) Page 
 
-
-![gif](art/MVPArms.gif)
-
+![gif](art/MVPArmsTemplate.gif)
 
 **MVPArmsTemplate** 和 **MVPArtTemplate** 是 [**JessYan**](https://github.com/JessYanCoding) 为强大的 [**MVPArms**](https://github.com/JessYanCoding/MVPArms) 以及 [**MVPArt**](https://github.com/JessYanCoding/MVPArt) 打造的一系列高度可配置且炒鸡炫酷的插件式模版, 可以为每个业务页面一键自动生成 **File**、**Xml**, 还可以自定义配置文件名、布局名和用于文件生成的目标包路径, 并且每一个文件都可以控制生成与否
 
@@ -23,7 +21,7 @@ A template for Android Studio to create [MVPArms](https://github.com/JessYanCodi
 
 一图胜千言,两个红色的标记都可以点,至于快捷键自己百度, **Mac** 是 **Command + n**
 
-<img src="art/step.png" width="80%" height="80%">
+![step](art/step.png)
 
 # 注意事项
 
