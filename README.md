@@ -5,11 +5,11 @@ A template for Android Studio to create [MVPArms](https://github.com/JessYanCodi
 
 **MVPArmsTemplate** 和 **MVPArtTemplate** 是 [**JessYan**](https://github.com/JessYanCoding) 为强大的 [**MVPArms**](https://github.com/JessYanCoding/MVPArms) 以及 [**MVPArt**](https://github.com/JessYanCoding/MVPArt) 打造的一系列高度可配置且炒鸡炫酷的插件式模版, 可以为每个业务页面一键自动生成 **File**、**Xml**, 还可以自定义配置文件名、布局名和用于文件生成的目标包路径, 并且每一个文件都可以控制生成与否
 
-# 如何安装？
+## 如何安装？
 
 请将 **MVPArmsTemplate** (如果使用的是 **MVPArt** 请复制 **MVPArtTemplate** 文件夹) 这个文件夹复制到 **AndroidStudio Activity** 模版的存放路径(其他模版同理), 请注意是复制整个文件夹, 不是里面的内容!
 
-**AndroidStudio Activity** 模版存放路径:
+**AndroidStudio Activity** 模版存放路径 (**请认真核对路径**):
 
 * Windows : AS安装目录/plugins/android/lib/templates/activities
 
@@ -17,17 +17,17 @@ A template for Android Studio to create [MVPArms](https://github.com/JessYanCodi
 
 **最后记得重启 AndroidStudio !**
 
-# 如何使用?
+## 如何使用?
 
-一图胜千言,两个红色的标记都可以点,至于快捷键自己百度, **Mac** 是 **Command + n**
+一图胜千言, 两个红色的选项都可以打开模板, 至于快捷键自己百度, **Mac** 是 **Command + n**
 
 ![step](art/step.png)
 
-# 注意事项
+## 注意事项
 
 * 此模板会持续保持更新, 但只保证能够兼容最新的 **AndroidStudio 稳定版**, 暂不提供其他版本
 
-<img src="art/attention.png" width="60%" height="60%">
+![attention](art/attention.png)
 
 * 原则上在任何包下都可以点击上面的按钮生成文件, 您在哪个包下点击生成文件, **Root Package Name** 的值就是哪个包, 下面的 **Activity Package Name**, **Presenter Package Name** 的默认值 (根据 **MVPArms Demo** 的包结构) 都是根据这个 **Root Package Name** 联动的, 如上图, 以我 **MVPArms Demo** 的包结构, **Presenter** 应该是放在 **.mvp.presenter** 下的, 但是现在 **Presenter Package Name** 的值却显示的是 **.app.mvp.presenter**, 明显和预期的输出包名不一致, 所以您最好在您的根包名下点击生成文件 (如 **me.jessyan.wideeyes**), 当然这些输出包名都是可以修改, 您不一定要使用我的默认的输出包名, 因为每个人的包结构都不一样, 所以包名可配置是刚需       
 
