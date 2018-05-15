@@ -5,7 +5,7 @@ A template for Android Studio to create [MVPArms](https://github.com/JessYanCodi
 ![gif](art/MVPArms.gif)
 
 
-**MVPArmsTemplate** 和 **MVPArtTemplate** 是 [**JessYan**](https://github.com/JessYanCoding) 为强大的 [**MVPArms**](https://github.com/JessYanCoding/MVPArms) 以及 [**MVPArt**](https://github.com/JessYanCoding/MVPArt) 打造的一系列高度可配置且炒鸡炫酷的插件式模版,拥有一键自动生成 **File** , **Xml** ,以及可自定义配置文件名,布局名,和用于文件生成的目标包路径,并且每一个组件都有权利选择生成或者不生成
+**MVPArmsTemplate** 和 **MVPArtTemplate** 是 [**JessYan**](https://github.com/JessYanCoding) 为强大的 [**MVPArms**](https://github.com/JessYanCoding/MVPArms) 以及 [**MVPArt**](https://github.com/JessYanCoding/MVPArt) 打造的一系列高度可配置且炒鸡炫酷的插件式模版,拥有为每个页面一键自动生成 **File** , **Xml** ,以及可自定义配置文件名,布局名,和用于文件生成的目标包路径,并且每一个文件都有权利选择生成或者不生成
 
 # 如何安装？
 
