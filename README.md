@@ -1,5 +1,4 @@
 ![Logo](https://raw.githubusercontent.com/JessYanCoding/MVPArms/master/image/arms_banner_v1.0.jpg)
-
 ![gif](art/MVPArmsTemplate.gif)
 
 **A template for Android Studio to create [MVPArms](https://github.com/JessYanCoding/MVPArms) and [MVPArt](https://github.com/JessYanCoding/MVPArt) Page** 
