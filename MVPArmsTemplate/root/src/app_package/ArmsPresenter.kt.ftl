@@ -1,21 +1,21 @@
-package ${presenterPackageName};
+package ${presenterPackageName}
 
-import android.app.Application;
+import android.app.Application
 
-import com.jess.arms.integration.AppManager;
+import com.jess.arms.integration.AppManager
 <#if needActivity && needFragment>
-import com.jess.arms.di.scope.ActivityScope;
+import com.jess.arms.di.scope.ActivityScope
 <#elseif needActivity>
-import com.jess.arms.di.scope.ActivityScope;
+import com.jess.arms.di.scope.ActivityScope
 <#elseif needFragment>
-import com.jess.arms.di.scope.FragmentScope;
+import com.jess.arms.di.scope.FragmentScope
 </#if>
-import com.jess.arms.mvp.BasePresenter;
-import com.jess.arms.http.imageloader.ImageLoader;
-import me.jessyan.rxerrorhandler.core.RxErrorHandler;
-import javax.inject.Inject;
+import com.jess.arms.mvp.BasePresenter
+import com.jess.arms.http.imageloader.ImageLoader
+import me.jessyan.rxerrorhandler.core.RxErrorHandler
+import javax.inject.Inject
 
-import ${contractPackageName}.${pageName}Contract;
+import ${contractPackageName}.${pageName}Contract
 
 
 

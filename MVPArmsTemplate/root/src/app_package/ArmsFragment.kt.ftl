@@ -21,7 +21,8 @@ import ${packageName}.R
 
 
 /**
- * 如果没presenter 直接泛型Ipresenter
+ * 如果没presenter
+ * 请直接使用 NullObjectPresenterByFragment
  */
 class ${pageName}Fragment : BaseFragment<${pageName}Presenter>() , ${pageName}Contract.View{
     companion object {
