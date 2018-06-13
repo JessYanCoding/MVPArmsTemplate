@@ -21,7 +21,17 @@ import ${packageName}.R
 
 
 /**
- * 如果没presenter 直接泛型Ipresenter
+ * 如果没presenter
+ * 你可以这样写
+ *
+ * @FragmentScope(請注意命名空間) class NullObjectPresenterByFragment
+ * @Inject constructor() : IPresenter {
+ * override fun onStart() {
+ * }
+ *
+ * override fun onDestroy() {
+ * }
+ * }
  */
 class ${pageName}Fragment : BaseFragment<${pageName}Presenter>() , ${pageName}Contract.View{
     companion object {

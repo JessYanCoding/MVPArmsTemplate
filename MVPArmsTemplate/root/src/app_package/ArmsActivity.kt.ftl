@@ -17,11 +17,21 @@ import ${packageName}.R
 
 
 /**
- * 如果没presenter 直接泛型Ipresenter
+ * 如果没presenter
+ * 你可以这样写
+ *
+ * @ActivityScope(請注意命名空間) class NullObjectPresenterByActivity
+ * @Inject constructor() : IPresenter {
+ * override fun onStart() {
+ * }
+ *
+ * override fun onDestroy() {
+ * }
+ * }
  */
 class ${pageName}Activity : BaseActivity<${pageName}Presenter>() , ${pageName}Contract.View {
 
-    override fun setupActivityComponent(ppComponent:AppComponent) {
+    override fun setupActivityComponent(appComponent:AppComponent) {
         Dagger${pageName}Component //如找不到该类,请编译一下项目
                 .builder()
                 .appComponent(appComponent)
