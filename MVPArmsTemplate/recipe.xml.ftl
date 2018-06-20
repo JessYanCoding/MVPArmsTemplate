@@ -1,7 +1,11 @@
 <?xml version="1.0"?>
 <#import "root://activities/common/kotlin_macros.ftl" as kt>
+<#import "root://activities/MVPArmsTemplate/arms_macros.ftl" as mvp>
 <recipe>
 <@kt.addAllKotlinDependencies />
+<@mvp.addMVPArmsDependencies />
+<copy from="root://activities/MVPArmsTemplate/config.gradle.ftl"
+                 to="${escapeXmlAttribute(projectLocation)}/config.gradle" />
 <#if needActivity>
     <merge from="root/AndroidManifest.xml.ftl"
            to="${escapeXmlAttribute(manifestOut)}/AndroidManifest.xml" />

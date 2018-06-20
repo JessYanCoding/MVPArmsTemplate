@@ -26,7 +26,7 @@
             default="com.mycompany.myapp"
             help="请填写你的项目包名,请认真核实此包名是否是正确的项目包名,不能包含子包,正确的格式如:me.jessyan.arms"
             />
-        
+
 
     <parameter
         id="needActivity"
@@ -76,7 +76,7 @@
         name="Generate Fragment"
         type="boolean"
         default="false"
-        help="是否需要生成 Fragment ? 不勾选则不生成" /> 
+        help="是否需要生成 Fragment ? 不勾选则不生成" />
 
 
 
@@ -89,7 +89,7 @@
         suggest="fragment_${classToResource(pageName)}"
         default="fragment_main"
         visibility="needFragment"
-        help="Fragment 创建之前需要填写 Fragment 的布局名,若布局已创建就直接填写此布局名,若还没创建此布局,请勾选下面的单选框" /> 
+        help="Fragment 创建之前需要填写 Fragment 的布局名,若布局已创建就直接填写此布局名,若还没创建此布局,请勾选下面的单选框" />
 
 
 
@@ -110,7 +110,7 @@
         suggest="${packageName}.mvp.ui.fragment"
         visibility="needFragment"
         help="Fragment 将被输出到此包下,请认真核实此包名是否是你需要输出的目标包名"
-        />  
+        />
 
 
 
@@ -119,24 +119,24 @@
         name="Generate Contract"
         type="boolean"
         default="true"
-        help="是否需要生成 Contract ? 不勾选则不生成" />  
+        help="是否需要生成 Contract ? 不勾选则不生成" />
 
  <parameter
         id="contractPackageName"
         name="Contract Package Name"
         type="string"
         constraints="package"
-        suggest="${packageName}.mvp.contract" 
+        suggest="${packageName}.mvp.contract"
         visibility="needContract"
         help="Contract 将被输出到此包下,请认真核实此包名是否是你需要输出的目标包名"
-        />  
+        />
 
 <parameter
         id="needPresenter"
         name="Generate Presenter"
         type="boolean"
         default="true"
-        help="是否需要生成 Presenter ? 不勾选则不生成" />  
+        help="是否需要生成 Presenter ? 不勾选则不生成" />
 
  <parameter
         id="presenterPackageName"
@@ -146,14 +146,14 @@
         suggest="${packageName}.mvp.presenter"
         visibility="needPresenter"
         help="Presenter 将被输出到此包下,请认真核实此包名是否是你需要输出的目标包名"
-        />  
+        />
 
 <parameter
         id="needModel"
         name="Generate Model"
         type="boolean"
         default="true"
-        help="是否需要生成 Model ? 不勾选则不生成" /> 
+        help="是否需要生成 Model ? 不勾选则不生成" />
 
 
 <parameter
@@ -164,7 +164,7 @@
         suggest="${packageName}.mvp.model"
         visibility="needModel"
         help="Model 将被输出到此包下,请认真核实此包名是否是你需要输出的目标包名"
-        />  
+        />
 
 
 
@@ -173,7 +173,7 @@
         name="Generate Dagger (Moudle And Component)"
         type="boolean"
         default="true"
-        help="是否需要生成 Dagger 组件? 不勾选则不生成" />  
+        help="是否需要生成 Dagger 组件? 不勾选则不生成" />
 
 <parameter
         id="componentPackageName"
@@ -183,7 +183,7 @@
         suggest="${packageName}.di.component"
         visibility="needDagger"
         help="Component 将被输出到此包下,请认真核实此包名是否是你需要输出的目标包名"
-        />  
+        />
 
 
    <parameter
@@ -194,8 +194,14 @@
         suggest="${packageName}.di.module"
         visibility="needDagger"
         help="Moudle 将被输出到此包下,请认真核实此包名是否是你需要输出的目标包名"
-        />  
-
+        />
+    <parameter
+        id="armsVersion"
+        name="MVPArmsVersion"
+        type="string"
+        constraints="unique|nonempty"
+        default="2.4.1"
+        help="这个是最新的MVPArms的依赖库的版本,模板会时刻保持最新,建议默认" />
 
 
 
