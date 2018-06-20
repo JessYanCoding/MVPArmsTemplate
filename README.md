@@ -7,6 +7,8 @@
 
 > **Tips: 若您基于本模板修改并且开源于网络, 请注明出处, 尊重开源, 才有人愿意开源, 谢谢!**
 
+此模板会持续保持更新新的内容并同步兼容最新的 **AndroidStudio 稳定版**, 如果最新的模板代码不能兼容您的 **AndroidStudio 旧版本**, 请自行升级  **AndroidStudio** 到最新的稳定版, 或者自行回滚模板代码到能兼容旧版本的代码 (因为模板也是和 **AndroidStudio** 的版本同步更新的, 但也可能模板第一次提交兼容的版本都高于您的 **AndroidStudio** 旧版本), 此模板由于会随时更新新的内容, 所以不可能为每个 **AndroidStudio** 版本都维护一个分支, 这将极大的增加我的工作量, 所以在受益于模板带来的便利的同时, 也请尊重我的决定, 请不要提关于 **AndroidStudio 旧版本** 不兼容的 **Issues**, 谢谢
+
 ## 如何安装？
 
 请将 **MVPArmsTemplate** (如果使用的是 **MVPArt** 请复制 **MVPArtTemplate** 文件夹) 这个文件夹复制到 **AndroidStudio Activity** 模版的存放路径(其他模版同理), 请注意是复制整个文件夹, 不是里面的内容!
@@ -27,9 +29,7 @@
 
 ## 注意事项
 
-* 此模板会持续保持更新, 但只保证能够兼容最新的 **AndroidStudio 稳定版**, 暂不提供其他版本
-
-  <img src="art/attention.png" width="80%" height="80%">
+<img src="art/attention.png" width="80%" height="80%">
 
 * 原则上在任何包下都可以点击上面的按钮生成文件, 您在哪个包下点击生成文件, **Root Package Name** 的值就是哪个包, 下面的 **Activity Package Name**, **Presenter Package Name** 的默认值 (根据 **MVPArms Demo** 的包结构) 都是根据这个 **Root Package Name** 联动的, 如上图, 以我 **MVPArms Demo** 的包结构, **Presenter** 应该是放在 **.mvp.presenter** 下的, 但是现在 **Presenter Package Name** 的值却显示的是 **.app.mvp.presenter**, 明显和预期的输出包名不一致, 所以您最好在您的根包名下点击生成文件 (如 **me.jessyan.wideeyes**), 当然这些输出包名都是可以修改, 您不一定要使用我的默认的输出包名, 因为每个人的包结构都不一样, 所以包名可配置是刚需       
 
