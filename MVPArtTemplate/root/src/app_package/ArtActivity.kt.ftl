@@ -26,8 +26,8 @@ class ${pageName}Activity : BaseActivity <#if presenterName?has_content><${prese
 
     }
 
-    override fun obtainPresenter(): MainPresenter? {
-       return MainPresenter(ArtUtils.obtainAppComponentFromContext(this))
+    override fun  obtainPresenter():<#if presenterName?has_content>${presenterName}<#else>IPresenter</#if>? {
+      return <#if presenterName?has_content>  ${presenterName}(ArtUtils.obtainAppComponentFromContext(this))<#else> null</#if>;
     }
 
     override fun showLoading() {
