@@ -10,7 +10,6 @@ import com.jess.arms.di.component.AppComponent;
 import com.jess.arms.utils.ArmsUtils;
 
 import ${componentPackageName}.Dagger${pageName}Component;
-import ${moudlePackageName}.${pageName}Module;
 import ${contractPackageName}.${pageName}Contract;
 import ${presenterPackageName}.${pageName}Presenter;
 
@@ -27,7 +26,7 @@ public class ${pageName}Activity extends BaseActivity<${pageName}Presenter> impl
         Dagger${pageName}Component //如找不到该类,请编译一下项目
                 .builder()
                 .appComponent(appComponent)
-                .${extractLetters(pageName[0]?lower_case)}${pageName?substring(1,pageName?length)}Module(new ${pageName}Module(this))
+                .view(this)
                 .build()
                 .inject(this);
     }
