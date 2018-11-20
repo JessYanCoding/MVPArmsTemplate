@@ -8,6 +8,7 @@ import com.jess.arms.di.scope.ActivityScope;
 import com.jess.arms.di.scope.FragmentScope;
 </#if>
 
+import dagger.Binds;
 import dagger.Module;
 import dagger.Provides;
 
@@ -16,17 +17,8 @@ import ${modelPackageName}.${pageName}Model;
 
 
 @Module
-public class ${pageName}Module {
+public abstract class ${pageName}Module {
 
-    <#if needActivity && needFragment>
-    @ActivityScope
-    <#elseif needActivity>
-    @ActivityScope
-    <#elseif needFragment>
-    @FragmentScope
-    </#if>
-    @Provides
-    ${pageName}Contract.Model provide${pageName}Model(${pageName}Model model){
-        return model;
-    }
+    @Binds
+    abstract ${pageName}Contract.Model bind${pageName}Model(${pageName}Model model);
 }
