@@ -17,6 +17,9 @@ import com.jess.arms.di.scope.FragmentScope
 import ${fragmentPackageName}.${pageName}Fragment
 </#if>
 
+<#import "root://activities/MVPArmsTemplate/globals.xml.ftl" as gb>
+
+<@gb.fileHeader />
 <#if needActivity && needFragment>
 @ActivityScope
 <#elseif needActivity>

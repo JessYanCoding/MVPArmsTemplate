@@ -18,7 +18,9 @@ import ${packageName}.R;
 
 import static com.jess.arms.utils.Preconditions.checkNotNull;
 
+<#import "root://activities/MVPArmsTemplate/globals.xml.ftl" as gb>
 
+<@gb.fileHeader />
 public class ${pageName}Activity extends BaseActivity<${pageName}Presenter> implements ${pageName}Contract.View {
 
     @Override

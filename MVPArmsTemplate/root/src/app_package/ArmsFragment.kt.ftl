@@ -19,7 +19,9 @@ import ${presenterPackageName}.${pageName}Presenter
 
 import ${packageName}.R
 
+<#import "root://activities/MVPArmsTemplate/globals.xml.ftl" as gb>
 
+<@gb.fileHeader />
 /**
  * 如果没presenter
  * 你可以这样写

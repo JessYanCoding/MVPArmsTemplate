@@ -22,7 +22,9 @@ import ${packageName}.R;
 
 import static com.jess.arms.utils.Preconditions.checkNotNull;
 
+<#import "root://activities/MVPArmsTemplate/globals.xml.ftl" as gb>
 
+<@gb.fileHeader />
 public class ${pageName}Fragment extends BaseFragment<${pageName}Presenter> implements ${pageName}Contract.View{
 
     public static ${pageName}Fragment newInstance() {
