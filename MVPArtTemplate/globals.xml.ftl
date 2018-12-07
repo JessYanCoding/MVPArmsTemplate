@@ -9,3 +9,18 @@
     <global id="activityClass" value="${pageName}Activity" />
     <#include "../common/common_globals.xml.ftl" />
 </globals>
+
+<#macro fileHeader>
+/**
+ * ================================================
+ * Description:
+ * <p>
+ * Created by MVPArtTemplate on ${.now?string["MM/dd/yyyy HH:mm"]}
+ * <a href="mailto:jess.yan.effort@gmail.com">Contact me</a>
+ * <a href="https://github.com/JessYanCoding">Follow me</a>
+ * <a href="https://github.com/JessYanCoding/MVPArt">Star me</a>
+ * <a href="https://github.com/JessYanCoding/MVPArms/wiki">See me</a>
+ * <a href="https://github.com/JessYanCoding/MVPArmsTemplate">模版请保持更新</a>
+ * ================================================
+ */
+</#macro>
