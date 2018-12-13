@@ -14,7 +14,9 @@ import ${packageName}${presenterPackageName}.${presenterName};
 
 import ${packageName}.R;
 
+<#import "root://activities/MVPArtTemplate/globals.xml.ftl" as gb>
 
+<@gb.fileHeader />
 class ${pageName}Activity : BaseActivity <#if presenterName?has_content><${presenterName}>()</#if> , IView {
 
     override fun initView(savedInstanceState:Bundle?):Int {

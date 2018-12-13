@@ -20,7 +20,9 @@ import ${packageName}${presenterPackageName}.${presenterName}
 
 import ${packageName}.R
 
+<#import "root://activities/MVPArtTemplate/globals.xml.ftl" as gb>
 
+<@gb.fileHeader />
 class ${pageName}Fragment : BaseFragment <#if presenterName?has_content><${presenterName}></#if>() , IView {
 
     companion object {
@@ -28,8 +30,7 @@ class ${pageName}Fragment : BaseFragment <#if presenterName?has_content><${prese
             val fragment = ${pageName}Fragment()
             return fragment
         }
-        }
-
+    }
 
     override fun initView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?):View{
         return inflater.inflate(R.layout.${fragmentLayoutName}, container, false);

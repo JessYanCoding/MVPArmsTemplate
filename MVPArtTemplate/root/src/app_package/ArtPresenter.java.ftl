@@ -8,7 +8,9 @@ import me.jessyan.rxerrorhandler.core.RxErrorHandler;
 import ${packageName}${modelPackageName}.${modelName};
 </#if>
 
+<#import "root://activities/MVPArtTemplate/globals.xml.ftl" as gb>
 
+<@gb.fileHeader />
 public class ${presenterName} extends BasePresenter <#if modelName?has_content><${modelName}></#if> {
     private RxErrorHandler mErrorHandler;
     

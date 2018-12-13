@@ -23,7 +23,9 @@ import ${packageName}${presenterPackageName}.${presenterName};
 
 import ${packageName}.R;
 
+<#import "root://activities/MVPArtTemplate/globals.xml.ftl" as gb>
 
+<@gb.fileHeader />
 public class ${pageName}Fragment extends BaseFragment <#if presenterName?has_content><${presenterName}></#if> implements IView {
 
     public static ${pageName}Fragment newInstance() {
