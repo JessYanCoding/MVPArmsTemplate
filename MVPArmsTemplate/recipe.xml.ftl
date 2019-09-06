@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<#import "root://activities/common/kotlin_macros.ftl" as kt>
+<#import "root://gradle-projects/NewArmsModule/kotlin_macros.ftl" as kt>
 <recipe>
 <@kt.addAllKotlinDependencies />
 <#if needActivity>
