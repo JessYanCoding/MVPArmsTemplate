@@ -1,7 +1,9 @@
 <?xml version="1.0"?>
 <#import "root://gradle-projects/NewArmsModule/kotlin_macros.ftl" as kt>
+<#import "root://activities/MVPArmsTemplate/dagger2_macros.ftl" as dagger2>
 <recipe>
- <@kt.addAllKotlinDependencies />
+<@kt.addAllKotlinDependencies />
+<@dagger2.addAllKaptDependencies />
 <#if needActivity>
     <merge from="root/AndroidManifest.xml.ftl"
            to="${escapeXmlAttribute(manifestOut)}/AndroidManifest.xml" />
