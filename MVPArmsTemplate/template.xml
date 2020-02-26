@@ -2,7 +2,7 @@
 <template
     format="5"
     revision="1"
-    name="MVPArms 全家桶"
+    name="Arms 全家桶"
     minApi="9"
     minBuildApi="15"
     description="一键创建 MVPArms 单个页面所需要的全部组件, JessYan 将这个高度可配置的模板献给强大的 MVPArms, 使用详情请见 README">
