@@ -3,14 +3,14 @@
 
     <application>
         <#if isNewModule>
-	    <activity android:name="${ativityPackageName}.${activityClass}">
+	    <activity android:name="${packageName}${ativityPackageName}.${activityClass}">
 	        <intent-filter>
 	            <action android:name="android.intent.action.MAIN" />
 	            <category android:name="android.intent.category.LAUNCHER" />
 	        </intent-filter>
 	    </activity>
 	<#else>
-	    <activity android:name="${ativityPackageName}.${activityClass}"/>
+	    <activity android:name="${packageName}${ativityPackageName}.${activityClass}"/>
 	</#if>  
     </application>
 </manifest>
