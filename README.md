@@ -1,6 +1,8 @@
 ![Logo](https://raw.githubusercontent.com/JessYanCoding/MVPArms/master/image/arms_banner_v1.0.jpg)
 ![gif](art/MVPArmsTemplate.gif)
 
+# 4.0 + AndroidStudio 已不可用该模板，请参考[这里](https://github.com/JessYanCoding/MVPArms/issues/387)
+
 **A template for Android Studio to create [MVPArms](https://github.com/JessYanCoding/MVPArms) and [MVPArt](https://github.com/JessYanCoding/MVPArt) Page** 
 
 **MVPArmsTemplate** 和 **MVPArtTemplate** 是 [**JessYan**](https://github.com/JessYanCoding) 为强大的 [**MVPArms**](https://github.com/JessYanCoding/MVPArms) 以及 [**MVPArt**](https://github.com/JessYanCoding/MVPArt) 打造的一系列高度可配置且炒鸡炫酷的插件式模版, 可以为每个业务页面一键自动生成 **File**、**Xml**, 还可以自定义配置文件名、布局名和用于文件生成的目标包路径, 并且每一个文件都可以控制生成与否, 如果想一键搭建 **MVPArms** 的官方架构, 请使用 [**MVPArms** 的 **Module** 级模板](https://github.com/JessYanCoding/MVPArms-Module-Template)
