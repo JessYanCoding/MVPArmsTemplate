@@ -1,7 +1,7 @@
 ![Logo](https://raw.githubusercontent.com/JessYanCoding/MVPArms/master/image/arms_banner_v1.0.jpg)
 ![gif](art/MVPArmsTemplate.gif)
 
-# 4.0 + AndroidStudio 已不可用该模板，请参考[这里](https://github.com/JessYanCoding/MVPArms/issues/387)
+# 4.0 + AndroidStudio 已不可用该模板，只能使用自制插件的方式引入模板，请参考[这里](https://github.com/JessYanCoding/MVPArms/issues/387)
 
 **A template for Android Studio to create [MVPArms](https://github.com/JessYanCoding/MVPArms) and [MVPArt](https://github.com/JessYanCoding/MVPArt) Page** 
 
